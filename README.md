@@ -75,7 +75,7 @@ Be gentle.
   and `pull` said repo from my web server.  Sounds simple enough?
 - But Git understands things differently: it thinks that when I `git
   push` what I really want is to contribute my changes to
-  [DigitalCraftsman]’s *Agency theme*, and since I am not a contributor
+  [DigitalCraftsman][]’s *Agency theme*, and since I am not a contributor
   (no write permissions to his repo), Git simply does not push (rightly
   so) the changes I made locally to the theme.  **But that is not my
   intent!**

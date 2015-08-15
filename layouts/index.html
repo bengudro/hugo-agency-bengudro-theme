@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{{ "<!--" | safeHTML }}
+
+    ##    ##  ########  ##        ##          ####        ########  ##    ##  ########  ######    ########  ##
+    ##    ##  ########  ##        ##         ######       ########  ##    ##  ########  #######   ########  ##
+    ##    ##  ##        ##        ##        ##    ##         ##     ##    ##  ##        ##    ##  ##        ##
+    ##    ##  ##        ##        ##        ##    ##         ##     ##    ##  ##        ##    ##  ##        ##
+    ########  ######    ##        ##        ##    ##         ##     ########  ######    ######    ######    ##
+    ########  ######    ##        ##        ##    ##         ##     ########  ######    #######   ######    ##
+    ##    ##  ##        ##        ##        ##    ##         ##     ##    ##  ##        ##    ##  ##        ##
+    ##    ##  ##        ##        ##        ##    ##         ##     ##    ##  ##        ##    ##  ##
+    ##    ##  ########  ########  ########   ######          ##     ##    ##  ########  ##    ##  ########  ##
+    ##    ##  ########  ########  ########    ####           ##     ##    ##  ########  ##    ##  ########  ##
+
+    Did you decide to take a look in here to see if I can write clean code?
+    You bet I can!  I would even describe myself as too attentive to details
+    at times…
+
+    This site is built on the excellent Hugo generator (https://gohugo.io/),
+    with a template that I modified to my liking.  You can view the entire
+    source code for this site at https://github.com/bengudro/bengudro/
+
+    The intended purpose of this site is to showcase my capabilities… sort
+    of an ‘online résumé.’  Most of the code showcased here is work that I
+    have done while in school.
+    
+    The easiest code to display is obviously the front-end stuff
+    (CSS/HTML/Javascript & jQuery code…) since the end result is immediately
+    viewable.
+
+    The chanllenge will be displaying the back-end stuff (PHP/C♯/Java code…)
+    that I have done in school, since in most cases there is not much to see
+    in terms of a ‘web page’ but instead there is only code…  I’m afraid
+    that in some cases the best I will be able to do is providing a link to
+    a Github repo for a given project.
+
+    Anyway, this site—as well of the accompanying Github repositories–are
+    still a work in progress, as I haven’t gotten around to posting all of
+    the code that I wanted, and the look of the site isn’t complete, so stay
+    tuned.
+
+    Consider this page an invitation to contact me for job offerings and/or
+    contract work.
+
+    ———————————————————————————| Contacting me |————————————————————————————
+
+    My name is Benjamin Goudreault and my_mail_provider is Gmail
+
+    ✉ {firstname}<dot>{lastname}<at>{my_mail_provider}<dot>{com}
+    ☎ “Four” “O” “Three” — “Four” “Seven” “Two” — “One” “Two” “Three” “Five”
+
+    I am located in Calgary, Alberta, but I don’t mind working remotely, so
+    do not hesitate to get in touch no matter your location.
+
+    ————————————————————————————————————————————————————————————————————————
+
+    Oh by the way I am fluent in both French and English (French being my
+    first language.)
+
+    Cheers! 😃
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}" xml:lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
+ <head>
+{{ partial "head.html" . }}
+ </head>
+ <body id="page-top" class="index">
+{{ partial "nav.html" . }}
+{{ partial "hero.html" . }}
+{{ partial "services.html" . }}
+{{ partial "portfolio.html" . }}
+{{ partial "about.html" . }}
+{{ partial "team.html" . }}
+{{ partial "clients.html" . }}
+{{ partial "contact.html" . }}
+{{ partial "footer.html" . }}
+{{ partial "modals.html" . }}
+{{ partial "js.html" . }}
+ </body>
+</html>

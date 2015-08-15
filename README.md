@@ -73,8 +73,7 @@ Be gentle.
   write permissions.  Makes perfect sense.
 - But that’s not even my intention in the first place anyway.  All I
   want is to make local changes to the *Agency theme*, test said changes
-  on my machine and, once satisfied, `push` my website to my Gihub repo,
-  and `pull` said repo from my web server.  Sounds simple enough?
+  on my machine and, once satisfied, `push` my website to my Gihub repo.
 - But Git understands things differently: it thinks that when I `git
   push` what I really want is to contribute my changes to
   [DigitalCraftsman][]’s *Agency theme*, and since I am not a contributor
@@ -91,16 +90,14 @@ Be gentle.
 1. `deinit` the `themes` submodule, `rm -rf` the `themes` subdirectory
    and replace it with with my own `themes` subdir containing *only* 
    a copy of DigitalCraftsman’s *Agency theme*
-2. Keep the themes submodule, but figure a way to add my modified theme
+2. Keep the `themes` submodule, but figure a way to add my modified theme
    (named `agency-bengudro` or whatever) to said submodule.
 
 Option 1.) seems the most straighforward, but I lean towards option 2.)
 for at least a couple reasons:
-
   - This option would in theory allow me to `push` to my personal Github
     repo all changes made locally to my personal copy of the
     `agency-bengudro` theme.
-
   - I may want to try a different theme in the future, so keeping an
     up-to-date submodule in my project containing all Hugo themes makes
     sense; if I want to switch themes, I could repeat this procedure:
@@ -115,7 +112,7 @@ modified theme residing happily alongside Hugo’s “official” themes.
 Any input apprecitated. 😃
 
 
-[DigitalCraftsman]: https://github.com/digitalcraftsman/hugo-agency-theme)
+[DigitalCraftsman]: https://github.com/digitalcraftsman/hugo-agency-theme/
 [Hugo Quick Start Guide]: https://gohugo.io/overview/quickstart/
 [`themes` repo]: https://github.com/spf13/hugoThemes/
 [Github repo]: https://github.com/bengudro/bengudro/

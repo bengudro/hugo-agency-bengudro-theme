@@ -1,7 +1,7 @@
 # hugo-agency-bengudro-theme
 
 I totally ripped this theme off of
-[DigitalCraftsman](https://github.com/digitalcraftsman/hugo-agency-theme)
+[DigitalCraftsman](https://github.com/digitalcraftsman/hugo-agency-theme).
 
 No I did not intend to just take his theme.  (All credits go to him.)
 
@@ -39,6 +39,29 @@ Be gentle.
             
             no changes added to commit (use "git add" and/or "git commit -a")
 
+- So let’s try to `"git add" and/or "git commit -a"` as usefully suggested:
+
+            $ git add themes
+            $ git status
+            On branch master
+            Your branch is up-to-date with 'origin/master'.
+            Changes not staged for commit:
+              (use "git add <file>..." to update what will be committed)
+              (use "git checkout -- <file>..." to discard changes in working directory)
+              (commit or discard the untracked or modified content in submodules)
+            
+                    modified:   themes (modified content)
+            
+            no changes added to commit (use "git add" and/or "git commit -a")
+            $ git commit --message 'add themes subdir'
+            On branch master
+            Your branch is up-to-date with 'origin/master'.
+            Changes not staged for commit:
+                    modified:   themes (modified content)
+            
+            no changes added to commit
+            :( $ git push origin master
+            Everything up-to-date
 
 - Being new to Git, I did a little research, and I found a [few][]
   [interesting][] [links][]

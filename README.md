@@ -28,7 +28,6 @@ Be gentle.
 - The `themes` subdirectory does not get pushed!
    - Here is the ouput of `git status`:
 
-
             On branch master
             Your branch is up-to-date with 'origin/master'.
             Changes not staged for commit:

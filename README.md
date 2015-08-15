@@ -1,4 +1,88 @@
 # hugo-agency-bengudro-theme
+
+I totally ripped this theme off of
+[DigitalCraftsman](https://github.com/digitalcraftsman/hugo-agency-theme)
+
+No I did not intend to just take his theme.  (All credits go to him.)
+
+Nor did I intend to fork it.
+
+Mainly I copied his theme out of frustration with a little problem that
+I am having and am not sure how to resolve yet.
+
+Please take into consideration that I am new to both Hugo and Git.
+Be gentle.
+
+#### Briefly my problem is as follows:
+
+- I followed the [Hugo Quick Start Guide][], and so I cloned the entire
+  [`themes` repo][] on my local machine.
+- I then modified the *Agency theme* to my liking.  All fine and dandy.
+- Now I want to:
+   1. `git push` my website to a [Github repo][], along with any changes
+      I made to the *Agency theme*.
+   2. `ssh` to my web server and `git pull` my repo/website from Github.
+
+#### But a problem occurs when I `push` my entire Hugo website to Github:
+
+- The `themes` subdirectory does not get pushed!
+   - Here is the ouput of `git status`:
+
+        On branch master
+        Your branch is up-to-date with 'origin/master'.
+        Changes not staged for commit:
+          (use "git add <file>..." to update what will be committed)
+          (use "git checkout -- <file>..." to discard changes in working directory)
+          (commit or discard the untracked or modified content in submodules)
+        
+                modified:   themes (modified content)
+        
+        no changes added to commit (use "git add" and/or "git commit -a")
+
+
+- Being new to Git, I did a little research, and I found a [few][]
+  [interesting][] [links][]
+- So, if I understand correctly what is going on here: the `themes`
+  subdirectory in my website is actually a submodule of my git repo,
+  and I cannot push changes to a repository to which I do not have
+  which permissions.  Makes perfect sense.
+- But that’s not even my intention in the first place anyway.  All I
+  want is to make local changes to the *Agency theme*, test said changes
+  on my machine and, once satisfied, `push` my website to my Gihub repo,
+  and `pull` said repo from my web server.  Sounds simple enough?
+- But Git understands things differently: it thinks that when I `git
+  push` what I really want is to contribute my changes to
+  DigitalCraftsman’s *Agency theme*, and since I am not a contributor
+  (no write permissions to his repo), Git simply does not push (rightly
+  so) the changes I made locally to the theme.  **But that is not my
+  intent!**
+   - And even if it **were** my intent, I would still need write
+     permissions to his repo, i.e. become a contributor to his project.
+     But this wouldn’t make much sense, since any changes I will make
+     are simply to suit my personal taste.
+
+#### So it seems I have two options:
+
+1. `deinit` the `themes` submodule, `rm -rf` the `themes` subdirectory
+   and replace it with with my own `themes` subdir containing *only* 
+   a copy of DigitalCraftsman’s *Agency theme*
+2. Keep the themes submodule, but figure a way to add my modified theme
+   (`agency-bengudro`) to said submodule.
+
+Option 1.) seems the most straighforward, but I lean towards option 2.) for at
+least a couple reasons:
+   1. I may want to try a different theme in the future, so keeping an
+      up-to-date submodule in my project containing all Hugo themes makes
+      sense.
+
+
+[Hugo Quick Start Guide]: https://gohugo.io/overview/quickstart/
+[`themes` repo]: https://github.com/spf13/hugoThemes/
+[Github repo]: https://github.com/bengudro/bengudro/
+[few]: http://www.minute.no/2015/04/setting-up-a-git-repository-with-nested-submodules/
+[interesting]: https://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule/
+[links]: https://git-scm.com/book/en/v2/Git-Tools-Submodules/
+
 ## Agency Theme
 
 Agency Theme is a one page portfolio for companies and freelancers based on
@@ -15,7 +99,7 @@ effects, full page portfolio item modals, a timeline, and a contact form.
 - [Getting started](#getting-started)
     - [The config file](#the-config-file)
     - [Change the hero background](#change-the-hero-background)
-    - [Present your skills](#present-your-skills) 
+    - [Present your skills](#present-your-skills)
     - [Create your portfolio](#create-your-portfolio)
     - [Show what happened](#show-what-happened)
     - [Introduce your team](#introduce-your-team)
@@ -185,7 +269,7 @@ following the steps below:
 
 ### Nearly finished
 
-In order to see your site in action, run Hugo’s built-in local server. 
+In order to see your site in action, run Hugo’s built-in local server.
 
     $ hugo server -w
 

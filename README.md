@@ -62,6 +62,7 @@ Be gentle.
             $ git push origin master
             Everything up-to-date
 
+- So it doesn’t work (since Git says `no changes added to commit`.)
 - Being new to Git, I did a little research, and I found a [few][]
   [interesting][] [links][]
 - So, if I understand correctly what is going on here: the `themes`

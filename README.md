@@ -81,8 +81,8 @@ Be gentle.
   intent!**
    - And even if it **were** my intent, I would still need write
      permissions to his repo, i.e. become a contributor to his project.
-     But this wouldn’t make much sense, since any changes I will make
-     are simply to suit my personal taste.
+     But this wouldn’t make much sense, since any changes I will make to
+     his theme are simply to suit my personal taste.
 
 #### So it seems I have two options:
 

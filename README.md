@@ -52,14 +52,14 @@ Be gentle.
                     modified:   themes (modified content)
             
             no changes added to commit (use "git add" and/or "git commit -a")
-            $ git commit --message 'add themes subdir'
+            $ git commit -m "add the themes subdirectory"
             On branch master
             Your branch is up-to-date with 'origin/master'.
             Changes not staged for commit:
                     modified:   themes (modified content)
             
             no changes added to commit
-            :( $ git push origin master
+            $ git push origin master
             Everything up-to-date
 
 - Being new to Git, I did a little research, and I found a [few][]

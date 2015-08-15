@@ -1,7 +1,6 @@
 # hugo-agency-bengudro-theme
 
-I totally ripped this theme off of
-[DigitalCraftsman](https://github.com/digitalcraftsman/hugo-agency-theme).
+I totally ripped this theme off of [DigitalCraftsman][].
 
 No I did not intend to just take his theme.  (All credits go to him.)
 
@@ -75,7 +74,7 @@ Be gentle.
   and `pull` said repo from my web server.  Sounds simple enough?
 - But Git understands things differently: it thinks that when I `git
   push` what I really want is to contribute my changes to
-  [DigitalCraftsman][]’s *Agency theme*, and since I am not a contributor
+  [DigitalCraftsman’s][] *Agency theme*, and since I am not a contributor
   (no write permissions to his repo), Git simply does not push (rightly
   so) the changes I made locally to the theme.  **But that is not my
   intent!**
@@ -99,6 +98,8 @@ least a couple reasons:
       sense.
 
 
+[DigitalCraftsman]: https://github.com/digitalcraftsman/hugo-agency-theme)
+[DigitalCraftsman’s]: https://github.com/digitalcraftsman/hugo-agency-theme)
 [Hugo Quick Start Guide]: https://gohugo.io/overview/quickstart/
 [`themes` repo]: https://github.com/spf13/hugoThemes/
 [Github repo]: https://github.com/bengudro/bengudro/

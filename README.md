@@ -28,16 +28,16 @@ Be gentle.
 - The `themes` subdirectory does not get pushed!
    - Here is the ouput of `git status`:
 
-         On branch master
-         Your branch is up-to-date with 'origin/master'.
-         Changes not staged for commit:
-           (use "git add <file>..." to update what will be committed)
-           (use "git checkout -- <file>..." to discard changes in working directory)
-           (commit or discard the untracked or modified content in submodules)
-         
-                 modified:   themes (modified content)
-         
-         no changes added to commit (use "git add" and/or "git commit -a")
+          On branch master
+          Your branch is up-to-date with 'origin/master'.
+          Changes not staged for commit:
+            (use "git add <file>..." to update what will be committed)
+            (use "git checkout -- <file>..." to discard changes in working directory)
+            (commit or discard the untracked or modified content in submodules)
+          
+                  modified:   themes (modified content)
+          
+          no changes added to commit (use "git add" and/or "git commit -a")
 
 
 - Being new to Git, I did a little research, and I found a [few][]

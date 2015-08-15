@@ -12,6 +12,8 @@ I am having and am not sure how to resolve yet.
 Please take into consideration that I am new to both Hugo and Git.
 Be gentle.
 
+### tl;dr
+
 #### Briefly my problem is as follows:
 
 - I followed the [Hugo Quick Start Guide][], and so I cloned the entire
@@ -90,13 +92,27 @@ Be gentle.
    and replace it with with my own `themes` subdir containing *only* 
    a copy of DigitalCraftsman’s *Agency theme*
 2. Keep the themes submodule, but figure a way to add my modified theme
-   (`agency-bengudro`) to said submodule.
+   (named `agency-bengudro` or whatever) to said submodule.
 
-Option 1.) seems the most straighforward, but I lean towards option 2.) for at
-least a couple reasons:
-   1. I may want to try a different theme in the future, so keeping an
-      up-to-date submodule in my project containing all Hugo themes makes
-      sense.
+Option 1.) seems the most straighforward, but I lean towards option 2.)
+for at least a couple reasons:
+
+  - This option would in theory allow me to `push` to my personal Github
+    repo all changes made locally to my personal copy of the
+    `agency-bengudro` theme.
+
+  - I may want to try a different theme in the future, so keeping an
+    up-to-date submodule in my project containing all Hugo themes makes
+    sense; if I want to switch themes, I could repeat this procedure:
+    make a local copy (with a new name) of a theme of my choice, add
+    this new theme to my git repo’s submodules, modify it and `push`
+    changes to my personal Github, whitout having to become a
+    contributor to any project.
+
+I realize the above sounds like the ramblings of a newbie, but I am just
+trying to figure out what would be the best approach to have my own
+modified theme residing happily alongside Hugo’s “official” themes.
+Any input apprecitated. 😃
 
 
 [DigitalCraftsman]: https://github.com/digitalcraftsman/hugo-agency-theme)

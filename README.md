@@ -1,4 +1,5 @@
-# Agency Theme
+# hugo-agency-bengudro-theme
+## Agency Theme
 
 Agency Theme is a one page portfolio for companies and freelancers based on
 the [original Bootstrap theme][] by [David Miller][].  This Hugo theme
@@ -238,4 +239,3 @@ around the project.
 [License]:                  https://github.com/digitalcraftsman/hugo-agency-theme/blob/master/LICENSE/
 
 [Steve Francia]:            https://github.com/spf13/
-# hugo-agency-bengudro-theme

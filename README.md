@@ -12,8 +12,6 @@ I am having and am not sure how to resolve yet.
 Please take into consideration that I am new to both Hugo and Git.
 Be gentle.
 
-### tl;dr
-
 #### Briefly my problem is as follows:
 
 - I followed the [Hugo Quick Start Guide][], and so I cloned the entire

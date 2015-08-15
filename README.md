@@ -68,7 +68,7 @@ Be gentle.
 - So, if I understand correctly what is going on here: the `themes`
   subdirectory in my website is actually a submodule of my git repo,
   and I cannot push changes to a repository to which I do not have
-  which permissions.  Makes perfect sense.
+  write permissions.  Makes perfect sense.
 - But that’s not even my intention in the first place anyway.  All I
   want is to make local changes to the *Agency theme*, test said changes
   on my machine and, once satisfied, `push` my website to my Gihub repo,
